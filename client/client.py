@@ -42,7 +42,7 @@ def try_submit(address, command):
 def submit_with_retry(command):
     candidates = list(NODES)
 
-    for attempt in range(MAX_ATTEMPTS):
+    for _attempt in range(MAX_ATTEMPTS):
         if not candidates:
             print("  nenhum nó respondeu, aguardando eleição...", file=sys.stderr)
             time.sleep(0.8)
