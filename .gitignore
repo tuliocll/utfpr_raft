@@ -1,0 +1,7 @@
+cluster/node_modules
+cluster/data/**
+!cluster/data/.gitkeep
+
+client/.venv/
+client/__pycache__/
+client/*.pyc
